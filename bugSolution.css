@@ -1,0 +1,15 @@
+Ensure that your `calc()` expressions are properly constructed. Check for balanced parentheses, correct operators (+, -, *, /), and valid units.  For example, the following are all valid uses of `calc()`:
+
+```css
+width: calc(100% - 10px);
+height: calc(50vh + 2em);
+margin: calc(10px / 2);
+```
+
+Incorrect uses:
+
+```css
+width: calc(100% - 10px; //Missing closing parenthesis
+height: calc(50vh + 2em); //Missing operator
+margin: calc(10px / 0); // Division by zero
+```
